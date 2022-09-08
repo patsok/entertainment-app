@@ -9,6 +9,16 @@
     "preview": "vite preview",
     "release": "git subtree push --prefix dist origin gh-pages"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patsok/entertainment-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patsok/entertainment-app/issues"
+  },
+  "homepage": "https://github.com/patsok/entertainment-app#readme",
   "devDependencies": {
     "swiper": "^8.3.2",
     "vite": "^3.1.0"
