@@ -3,31 +3,544 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon-32x32.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Entertainment app</title>
 </head>
 
 <body>
-  <div id="app">
-    <div class="nav">
-        <div class="nav-items">
-          <img class="nav-items__logo" src="./assets/logo.svg" alt="logo">
-          <div class="nav-tabs">
-            <div class="nav-tabs__icon font-icon-home">A</div>
-            <div class="nav-tabs__icon font-icon-movies">B</div>
-            <div class="nav-tabs__icon font-icon-series">C</div>
-            <div class="nav-tabs__icon font-icon-bookmark">D</div>
-          </div>
-          <img class="nav-items__account" src="./assets/image-avatar.png" alt="account image">
-        </div>
-    </div>
-    <div class="search-bar">
-      <label for="search-bar-input" class="font-icon-search">H</label>
-      <input type="search" name="search-bar-input" id="search-bar-input" placeholder="Search for movies or TV series">
+  <div class="nav">
+    <div class="nav-items">
+      <img class="nav-items__logo" src="./assets/logo.svg" alt="logo">
+      <div class="nav-tabs">
+        <div class="nav-tabs__icon font-icon-home">A</div>
+        <div class="nav-tabs__icon font-icon-movies">B</div>
+        <div class="nav-tabs__icon font-icon-series">C</div>
+        <div class="nav-tabs__icon font-icon-bookmark">D</div>
+      </div>
+      <img class="nav-items__account" src="./assets/image-avatar.png" alt="account image">
     </div>
   </div>
+  <div class="search-bar">
+    <label for="search-bar-input" class="font-icon-search">H</label>
+    <input type="search" name="search-bar-input" id="search-bar-input" placeholder="Search for movies or TV series">
+  </div>
   <script type="module" src="/main.js"></script>
+  <div class="trending">
+    <div class="trending__title">Trending</div>
+    <div class="trending-cards">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="video-card">
+            <img src="./assets/thumbnails/beyond-earth/trending/large.jpg" alt="movie card">
+            <div class="video-card-hover">
+              <div class="video-card-shadow"></div>
+              <div class="video-card-details">
+                <div class="video-card-properties">
+                  <div class="video-card__year video-card-prop__single">2019</div>
+                  <div class="video-card__type video-card-prop__single">
+                    <div class="font-icon-movies">B</div>Movie
+                  </div>
+                  <div class="video-card__rating video-card-prop__single">PG</div>
+                </div>
+                <div class="video-card__title">Beyond Earth</div>
+              </div>
+              <div class="video-card-bookmark">
+                <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+              </div>
+              <div class="video-card-play video-card-play--is-hidden">
+                <div class="video-card-play__icon font-icon-play">G</div>
+                <div class="video-card-play__text">Play</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-card">
+            <img src="./assets/thumbnails/bottom-gear/trending/large.jpg" alt="movie card">
+            <div class="video-card-hover">
+              <div class="video-card-shadow"></div>
+              <div class="video-card-details">
+                <div class="video-card-properties">
+                  <div class="video-card__year video-card-prop__single">2021</div>
+                  <div class="video-card__type video-card-prop__single">
+                    <div class="font-icon-movies">B</div>Movie
+                  </div>
+                  <div class="video-card__rating video-card-prop__single">PG</div>
+                </div>
+                <div class="video-card__title">Bottom Gear</div>
+              </div>
+              <div class="video-card-bookmark">
+                <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+              </div>
+              <div class="video-card-play video-card-play--is-hidden">
+                <div class="video-card-play__icon font-icon-play">G</div>
+                <div class="video-card-play__text">Play</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-card">
+            <img src="./assets/thumbnails/undiscovered-cities/trending/large.jpg" alt="movie card">
+            <div class="video-card-hover">
+              <div class="video-card-shadow"></div>
+              <div class="video-card-details">
+                <div class="video-card-properties">
+                  <div class="video-card__year video-card-prop__single">2019</div>
+                  <div class="video-card__type video-card-prop__single">
+                    <div class="font-icon-movies">C</div>TV Series
+                  </div>
+                  <div class="video-card__rating video-card-prop__single">E</div>
+                </div>
+                <div class="video-card__title">Undiscovered Cities</div>
+              </div>
+              <div class="video-card-bookmark">
+                <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+              </div>
+              <div class="video-card-play video-card-play--is-hidden">
+                <div class="video-card-play__icon font-icon-play">G</div>
+                <div class="video-card-play__text">Play</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-card">
+            <img src="./assets/thumbnails/1998/trending/large.jpg" alt="movie card">
+            <div class="video-card-hover">
+              <div class="video-card-shadow"></div>
+              <div class="video-card-details">
+                <div class="video-card-properties">
+                  <div class="video-card__year video-card-prop__single">2021</div>
+                  <div class="video-card__type video-card-prop__single">
+                    <div class="font-icon-movies">B</div>Movie
+                  </div>
+                  <div class="video-card__rating video-card-prop__single">18+</div>
+                </div>
+                <div class="video-card__title">1998</div>
+              </div>
+              <div class="video-card-bookmark">
+                <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+              </div>
+              <div class="video-card-play video-card-play--is-hidden">
+                <div class="video-card-play__icon font-icon-play">G</div>
+                <div class="video-card-play__text">Play</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-card">
+            <img src="./assets/thumbnails/dark-side-of-the-moon/trending/large.jpg" alt="movie card">
+            <div class="video-card-hover">
+              <div class="video-card-shadow"></div>
+              <div class="video-card-details">
+                <div class="video-card-properties">
+                  <div class="video-card__year video-card-prop__single">2018</div>
+                  <div class="video-card__type video-card-prop__single">
+                    <div class="font-icon-movies">C</div>TV Series
+                  </div>
+                  <div class="video-card__rating video-card-prop__single">PG</div>
+                </div>
+                <div class="video-card__title">Dark Side Of The Moon</div>
+              </div>
+              <div class="video-card-bookmark">
+                <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+              </div>
+              <div class="video-card-play video-card-play--is-hidden">
+                <div class="video-card-play__icon font-icon-play">G</div>
+                <div class="video-card-play__text">Play</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+  <div class="recommended">
+    <div class="recommended__title">Recommended for you</div>
+    <div class="recommended-cards">
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="./assets/thumbnails/the-great-lands/regular/large.jpg" alt="movie card">
+        <div class="video-card-main">
+          <div class="video-card-hover">
+            <div class="video-card-shadow"></div>
+            <div class="video-card-bookmark">
+              <div class="video-card-bookmark__icon font-icon-bookmark">E</div>
+            </div>
+            <div class="video-card-play video-card-play--is-hidden">
+              <div class="video-card-play__icon font-icon-play">G</div>
+              <div class="video-card-play__text">Play</div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card-details">
+          <div class="video-card-properties">
+            <div class="video-card__year video-card-prop__single">2019</div>
+            <div class="video-card__type video-card-prop__single">
+              <div class="font-icon-movies">B</div>Movie
+            </div>
+            <div class="video-card__rating video-card-prop__single">PG</div>
+          </div>
+          <div class="video-card__title">The Great Lands</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

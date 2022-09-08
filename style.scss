@@ -1,6 +1,9 @@
 @import './global-components/sass/variables';
 @import './global-components/nav/nav.scss';
 @import './global-components/search-bar/search-bar.scss';
+@import '@/trending_section/trending_section.scss';
+@import '@/recommended_section/recommended_section.scss';
+
 
 
 *,
@@ -13,8 +16,6 @@
 
 body {
     font-family: var(--font-stack);
-    // min-height: 100vh;
-    min-height: 3000px;
     background-color: var(--global-background-color);
 }
 

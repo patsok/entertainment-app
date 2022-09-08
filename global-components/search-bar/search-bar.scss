@@ -1,9 +1,14 @@
 .search-bar {
+    padding-top: 64px;
     padding-left: var(--global-section-padding-left);
     padding-right: 36px;
+    padding-bottom: 16px;
     display: flex;
     position: fixed;
     width: 100%;
+    z-index: 10;
+    background-color: var(--global-background-color);
+
 
     label {
         color: var(--global-text-color);
@@ -19,7 +24,7 @@
         font-family: var(--font-stack);
         font-weight: 300;
         font-size: 24px;
-        line-height: 30px;
+        line-height: 125%;
         width: 100%;
         color: var(--global-text-color);
         border-bottom: 2px solid rgba(0,0,0,0);
@@ -36,6 +41,24 @@
 
         &:active, &:focus, &:focus-within{
             border-bottom: 2px solid var(--global-primary-color);
+        }
+    }
+
+    @media screen and (max-width: $_768) {
+        padding-top: 132px;
+        padding-inline: 24px;
+    }
+
+    @media screen and (max-width: $_568) {
+        padding-inline: 16px;
+        padding-top: 80px;
+
+        label {
+            font-size: 18px;
+        }
+
+        input {
+            font-size: 16px;
         }
     }
 }
