@@ -1,0 +1,41 @@
+.search-bar {
+    padding-left: var(--global-section-padding-left);
+    padding-right: 36px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+
+    label {
+        color: var(--global-text-color);
+        margin-right: 24px;
+        font-size: 24px;
+    }
+
+    input {
+        appearance: none;
+        outline:none;
+        background-color: var(--global-background-color);
+        border: none;
+        font-family: var(--font-stack);
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        width: 100%;
+        color: var(--global-text-color);
+        border-bottom: 2px solid rgba(0,0,0,0);
+        padding-bottom: 14px;
+        caret-color: red;
+
+        &::placeholder-shown{
+            color: rgba(var(--global-text-color),0.5);
+        }
+
+        &::selection{
+            background-color: var(--global-secondary-color);
+        }
+
+        &:active, &:focus, &:focus-within{
+            border-bottom: 2px solid var(--global-primary-color);
+        }
+    }
+}

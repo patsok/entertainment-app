@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entertainment app</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="nav">
+        <div class="nav-items">
+          <img class="nav-items__logo" src="./assets/logo.svg" alt="logo">
+          <div class="nav-tabs">
+            <div class="nav-tabs__icon font-icon-home">A</div>
+            <div class="nav-tabs__icon font-icon-movies">B</div>
+            <div class="nav-tabs__icon font-icon-series">C</div>
+            <div class="nav-tabs__icon font-icon-bookmark">D</div>
+          </div>
+          <img class="nav-items__account" src="./assets/image-avatar.png" alt="account image">
+        </div>
+    </div>
+    <div class="search-bar">
+      <label for="search-bar-input" class="font-icon-search">H</label>
+      <input type="search" name="search-bar-input" id="search-bar-input" placeholder="Search for movies or TV series">
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
