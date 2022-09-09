@@ -43,3 +43,13 @@ const swiper = new Swiper('.trending-cards', {
       },
 });
 
+import data from '@assets/data.json';
+let trendingVideos = [];
+
+data.forEach(video => {
+    if (video.isTrending == true){
+        trendingVideos.push(video);
+    }
+});
+
+console.log(trendingVideos);
