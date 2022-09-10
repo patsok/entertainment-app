@@ -3,13 +3,13 @@ const trendingCardsController = (() => {
     const videoCards = document.querySelectorAll('.trending .video-card');
 
     videoCards.forEach(card => {
-        let img = card.querySelector('img');
-        card.style.backgroundImage = `url('${img.src}')`;
+        // let img = card.querySelector('img');
+        // card.style.backgroundImage = `url('${img.src}')`;
         let bookmarkButton = card.querySelector('.video-card-bookmark');
         bookmarkButton.addEventListener('click', () => bookmarkVideo(bookmarkButton));
-        let playButton = card.querySelector('.video-card-play');
-        card.addEventListener('mouseover', () => changeCardVisibility(playButton));
-        card.addEventListener('mouseout', () => changeCardVisibility(playButton));
+        // let playButton = card.querySelector('.video-card-play');
+        // card.addEventListener('mouseover', () => changeCardVisibility(playButton));
+        // card.addEventListener('mouseout', () => changeCardVisibility(playButton));
     });
 
     const bookmarkVideo = (button) => {
@@ -35,21 +35,19 @@ Swiper.use([Navigation, Pagination]);
 const swiper = new Swiper('.trending-cards', {
     speed: 1000,
     slidesPerView: "auto",
-    spaceBetween: 16,
+    // spaceBetween: 16,
+    slidesOffsetAfter: 16,
+    slidesOffsetBefore: 16,
     breakpoints: {
         578: {
-           spaceBetween: 40,
+        //    spaceBetween: 40,
+           slidesOffsetAfter: 24,
+           slidesOffsetBefore: 24,
         },
+        768: {
+            slidesOffsetAfter: 36,
+            slidesOffsetBefore: 0
+         },
       },
 });
 
-import data from '@assets/data.json';
-let trendingVideos = [];
-
-data.forEach(video => {
-    if (video.isTrending == true){
-        trendingVideos.push(video);
-    }
-});
-
-console.log(trendingVideos);

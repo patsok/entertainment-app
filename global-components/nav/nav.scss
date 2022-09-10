@@ -1,11 +1,12 @@
-.nav{
+.nav {
     padding: 32px;
     position: fixed;
     height: 100%;
-    top:0;
+    top: 0;
     z-index: 20;
+    background-color: var(--global-background-color);
 
-    .nav-items{
+    .nav-items {
         background-color: var(--global-primary-color);
         border-radius: 20px;
         width: 96px;
@@ -17,14 +18,14 @@
 
         display: flex;
         flex-direction: column;
-        gap:75px;
+        gap: 75px;
         align-items: center;
 
-        &__logo{
+        &__logo {
             max-width: 32px;
         }
 
-        &__account{
+        &__account {
             border: 1px solid var(--global-text-color);
             border-radius: 50%;
             margin-top: auto;
@@ -32,31 +33,32 @@
         }
     }
 
-    .nav-tabs{
+    .nav-tabs {
         display: flex;
         flex-direction: column;
         gap: 40px;
 
-        &__icon{
+        &__icon {
             color: var(--global-accent-color);
             transition: .2s;
 
-            &.font-icon-home{
+            &.font-icon-home {
                 color: var(--global-text-color);
             }
 
-            &:hover{
+            &:hover {
                 color: var(--global-secondary-color);
             }
         }
 
     }
+
     @media screen and (max-width: $_768) {
         width: 100%;
         height: unset;
         padding: 24px;
 
-        .nav-items{
+        .nav-items {
             flex-direction: row;
             height: 72px;
             width: 100%;
@@ -66,36 +68,37 @@
             justify-content: space-between;
             gap: 24px;
 
-            &__account{
+            &__account {
                 margin-top: unset;
             }
         }
 
-        .nav-tabs{
+        .nav-tabs {
             flex-direction: row;
             gap: 32px;
 
         }
     }
 
-    @media screen and (max-width: $_568){
-         padding: unset;
+    @media screen and (max-width: $_568) {
+        padding: unset;
 
-        .nav-items{
+        .nav-items {
             border-radius: 0;
             padding-inline: 16px;
             height: 56px;
 
-            &__logo{
+            &__logo {
                 width: 25px;
             }
 
-            &__account{
+            &__account {
                 width: 24px;
             }
         }
-        .nav-tabs{
-            &__icon{
+
+        .nav-tabs {
+            &__icon {
                 font-size: 16px;
             }
         }
