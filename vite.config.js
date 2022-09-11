@@ -5,8 +5,9 @@ export default defineConfig({
   base: '/entertainment-app/',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '/pages/home/_sections'),
-      '@assets': path.resolve(__dirname, '/assets'),
+      '@pages': path.resolve(__dirname, '/pages/'),
+      '@assets': path.resolve(__dirname, '/assets/'),
+      '@global': path.resolve(__dirname,'/global-components/')
     }
   },
   build: {

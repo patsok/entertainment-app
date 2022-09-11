@@ -1,9 +1,10 @@
-@import './global-components/sass/variables';
-@import './global-components/nav/nav.scss';
-@import './global-components/search-bar/search-bar.scss';
-@import '@/trending_section/trending_section.scss';
-@import '@/recommended_section/recommended_section.scss';
-
+@import '@global/sass/variables';
+@import '@global/sass/colors';
+@import '@global/sass/fonts';
+@import '@global/global-nav/global-nav.scss';
+@import '@global/global-search-bar/global-search-bar.scss';
+@import '@pages/home/home.scss';
+@import '@global/global-video-section/global-video-section.scss';
 
 
 *,

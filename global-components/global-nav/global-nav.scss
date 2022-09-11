@@ -1,0 +1,125 @@
+.nav {
+    --nav-border-radius: 20px;
+    --nav-max-height: 960px;
+    --nav-height: calc(100vh - (var(--global-nav-padding) * 2));
+    --logo-gap: 75px;
+    --nav-items-gap: 40px;
+    padding: var(--global-nav-padding);
+    background-color: var(--global-background-color);
+
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+
+    .nav-items {
+        background-color: var(--global-primary-color);
+        border-radius: var(--nav-border-radius);
+        width: var(--global-nav-width);
+        height: var(--nav-height);
+        max-height: var(--nav-max-height);
+
+        padding-block: var(--global-nav-padding);
+        font-size: 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: var(--logo-gap);
+        align-items: center;
+
+        &__logo {
+            display: flex;
+            align-items: center;
+            img {
+                max-width: 32px;
+            }
+        }
+
+        &__account {
+            border: 1px solid var(--global-on-primary-color);
+            border-radius: 50%;
+            margin-top: auto;
+            max-width: 40px;
+            transition: all .2s;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid var(--global-secondary-color);
+            }
+        }
+    }
+
+    .nav-tabs {
+        display: flex;
+        flex-direction: column;
+        gap: var(--nav-items-gap);
+
+        &__item {
+            color: var(--global-primary-variant-color);
+            transition: all .2s;
+            display: flex;
+            
+            .font-icon-home {
+                color: var(--global-on-primary-color);
+            }
+
+            &:hover {
+                color: var(--global-secondary-color);
+            }
+        }
+    }
+
+    @media screen and (max-width: $_768) {
+        --global-nav-width: 100%;
+        --global-nav-padding: 24px;
+        --logo-gap: 24px;
+        --nav-items-gap: 32px;
+        --nav-height: 72px;
+        width: 100%;
+        height: unset;
+
+        .nav-items {
+            flex-direction: row;
+            padding-block: unset;
+            padding-inline: var(--global-nav-padding);
+            align-items: center;
+            justify-content: space-between;
+
+            &__account {
+                margin-top: unset;
+            }
+        }
+
+        .nav-tabs {
+            flex-direction: row;
+        }
+    }
+
+    @media screen and (max-width: $_568) {
+        --global-nav-padding: 0px;
+        --nav-border-radius: 0px;
+        --nav-height: 56px;
+
+        .nav-items {
+            padding-inline: 16px;
+
+            &__logo {
+                img {
+                    width: 25px;
+                }
+            }
+
+            &__account {
+                width: 24px;
+            }
+        }
+
+        .nav-tabs {
+            justify-content: center;
+
+            &__item {
+                font-size: 16px;
+            }
+        }
+    }
+}

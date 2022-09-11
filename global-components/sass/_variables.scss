@@ -1,41 +1,28 @@
-@font-face {
-    font-family: 'Outfit';
-    src: url('./assets/fonts/Outfit-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('./assets/fonts/Outfit-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'font-icon';
-    src: url('./assets/fonts/font-icon.woff') format('woff'),
-         url('./assets/fonts/font-icon.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-:root{
-    --global-primary-color: #161D2F;
-    --global-secondary-color: #FC4747;
-    --global-accent-color: #5A698F;
-    --global-text-color: #FFFFFF;
-    --global-background-color: #10141E;
-
-    --font-stack: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --font-icon: 'font-icon', 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    
-    --global-section-padding-left: calc(32px + 96px + 36px);
-}
-
 $_768: 768px;
 $_568: 568px;
 $_375: 375px;
 
-$global-background-color: #10141E;
+
+:root{
+    --global-nav-padding: 32px;
+    --global-nav-width: 96px;
+    --global-section-padding-right: 36px;
+    --global-section-padding-left: calc(var(--global-nav-padding) + var(--global-nav-width) + var(--global-section-padding-right));
+    --global-section-padding-block: 0px;
+
+    @media screen and (max-width: $_768) {
+        --global-section-padding-left: 24px;
+        --global-section-padding-right: 24px;
+    }
+
+    @media screen and (max-width: $_568) {
+        --global-section-padding-right: 16px;
+        --global-section-padding-left: 16px;
+        --global-section-padding-block: 12px;
+    }
+
+}
+
+
+
 

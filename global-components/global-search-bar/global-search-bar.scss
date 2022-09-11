@@ -1,0 +1,64 @@
+.search-bar {
+    --hover-bar-gap: 12px;
+    --search-padding-top: 64px;
+    --search-font-size: 24px;
+    --icon-size: 24px;
+
+    padding-top: var(--search-padding-top);
+    padding-left: var(--global-section-padding-left);
+    padding-right: var(--global-section-padding-right);
+    padding-bottom: var(--hover-bar-gap);
+    background-color: var(--global-background-color);
+    display: flex;
+    width: 100%;
+    z-index: 10;
+    overflow:hidden;
+
+    label {
+        color: var(--global-on-background-color);
+        margin-right: 24px;
+        font-size: var(--icon-size);
+    }
+
+    input {
+        appearance: none;
+        outline: none;
+        font-family: var(--font-stack);
+        font-weight: 300;
+        font-size: var(--search-font-size);
+        line-height: 125%;
+        background-color: var(--global-background-color);
+        width: 100%;
+        color: var(--global-on-background-color);
+        border: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+        padding-bottom: var(--hover-bar-gap);
+        caret-color: var(--global-secondary-color);
+
+        &::placeholder {
+            color: var(--global-on-background-color);
+            opacity: 50%;
+        }
+
+        &::selection {
+            background-color: var(--global-secondary-color);
+        }
+
+        &:active,
+        &:focus,
+        &:focus-within {
+            border-bottom: 2px solid var(--global-primary-color);
+        }
+    }
+
+    @media screen and (max-width: $_768) {
+        --search-padding-top: calc(var(--global-nav-padding) + var(--global-nav-width));
+    }
+
+    @media screen and (max-width: $_568) {
+        --hover-bar-gap: 8px;
+        --search-padding-top: 80px;
+        --icon-size: 18px;
+        --search-font-size: 16px;
+    }
+}
