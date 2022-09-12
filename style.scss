@@ -4,6 +4,7 @@
 @import '@global/global-nav/global-nav.scss';
 @import '@global/global-search-bar/global-search-bar.scss';
 @import '@pages/home/home.scss';
+@import '@pages/login/login.scss';
 @import '@global/global-video-section/global-video-section.scss';
 
 
@@ -18,6 +19,7 @@
 body {
     font-family: var(--font-stack);
     background-color: var(--global-background-color);
+    min-height: 100vh;
 }
 
 a {

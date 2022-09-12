@@ -56,10 +56,10 @@
 
         &__item {
             color: var(--global-primary-variant-color);
-            transition: all .2s;
+            transition: color .2s;
             display: flex;
             
-            .font-icon-home {
+            &--active {
                 color: var(--global-on-primary-color);
             }
 

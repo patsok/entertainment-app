@@ -14,6 +14,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
+        home: path.resolve(__dirname, 'home.html'),
+        movies: path.resolve(__dirname, 'movies.html'),
+        tvseries: path.resolve(__dirname, 'tv-series.html'),
+        bookmarks: path.resolve(__dirname, 'bookmarks.html'),
       }
     },
   }
