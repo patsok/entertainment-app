@@ -27,18 +27,22 @@
     .trending-cards {
         display: flex;
         overflow: hidden;
-        animation: fade-in-left 1s forwards;
 
-        @keyframes fade-in-left {
-            0%{
-                opacity:0;
-                translate: 300px;
-            }
-            100%{
-                translate: 0px;
-                opacity:1;
-            }
+        .swiper-wrapper {
+            animation: fade-in-left 1s forwards;
 
+            @keyframes fade-in-left {
+                0% {
+                    opacity: 0;
+                    translate: 300px;
+                }
+
+                100% {
+                    translate: 0px;
+                    opacity: 1;
+                }
+
+            }
         }
     }
 
@@ -69,7 +73,7 @@
                 z-index: 1;
                 position: absolute;
                 bottom: 0;
-                left:0;
+                left: 0;
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
                 width: 100%;
                 border-radius: var(--card-border-radius);
@@ -162,7 +166,7 @@
             line-height: 125%;
             display: -webkit-box;
             -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;  
+            -webkit-box-orient: vertical;
             overflow: hidden;
         }
 
@@ -193,7 +197,7 @@
                     height: var(--card-text-prop-dot-size);
                     position: absolute;
                     bottom: calc((var(--prop-font-size) + var(--card-text-prop-dot-size)) / 2);
-                    right: calc((var(--card-text-prop-gap) + var(--card-text-prop-dot-size) ) / -2)
+                    right: calc((var(--card-text-prop-gap) + var(--card-text-prop-dot-size)) / -2)
                 }
             }
         }
@@ -209,11 +213,11 @@
             justify-content: center;
             align-items: center;
             color: var(--global-on-surface-color);
-            background-color: rgba($global-background-color,.5);
+            background-color: rgba($global-background-color, .5);
             border-radius: 50%;
             z-index: 5;
 
-            &:hover{
+            &:hover {
                 color: var(--global-surface-color);
                 background-color: var(--global-on-surface-color);
             }
@@ -240,7 +244,7 @@
         --title-font-size: 15px;
         --column-gap: 16px;
 
-        padding-bottom:24px;
+        padding-bottom: 24px;
         padding-top: 12px;
 
         .video-card {
